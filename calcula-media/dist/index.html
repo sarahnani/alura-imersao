@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta property="og:title" content="Calculadora de Média">
@@ -9,34 +9,35 @@
   <meta property="og:image" content="https://i.ibb.co/drVfF3M/calculadora.jpg">
   <meta property="og:image:width" content="300">
   <meta property="og:image:height" content="300">
-  <title>CodePen - Calculadora de média</title>
+  <title> Imersão Dev Alura - Aula 01 </title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-><html>
-  <head>
-    <title> Imersão Dev Alura - Aula 01 </title>
-  </head>
-  <body>
-    <div class="container">
+  <main>
+    <header>
       <h1 class="page-title"> Descubra se você passou de ano! </h1>
-      <p class="page-subtitle">
-      Coloque suas notas e veja o resultado!
-      </p>
-      <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""> <br><br>
-			
-			<input type="text" id="nome" placeholder="Qual seu nome?"> <br>
-			<input type="number" id="primeiroBimestre" placeholder="Nota do primeiro Bimestre" class="input1"> <input type="number" id="segundoBimestre" placeholder="Nota do segundo Bimestre" class="input1"> <br>
-			<input type="number" id="terceiroBimestre" placeholder="Nota do terceiro Bimestre" class="input2"> <input type="number" id="quartoBimestre" placeholder="Nota do quarto Bimestre" class="input2">
-			<button type="button" id="calcularMedia" onclick="calcular ()" class="button">Calcular Média</button><button type="button" id="limparInput" onclick="limpar()" class="button">Limpar</button>
+      <p class="page-subtitle">Preencha os campos abaixo e veja o resultado:</p>
+      <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="Logo da Imersão Dev da Alura">
+    </header>
+    <section class="input">
+			<input type="text" id="nome" placeholder="Qual seu nome?" autocomplete="off">
+			<input type="number" id="primeiroBimestre" placeholder="Nota do primeiro Bimestre" class="input1" autocomplete="off">
+      <input type="number" id="segundoBimestre" placeholder="Nota do segundo Bimestre" class="input1" autocomplete="off">
+			<input type="number" id="terceiroBimestre" placeholder="Nota do terceiro Bimestre" class="input2" autocomplete="off">
+      <input type="number" id="quartoBimestre" placeholder="Nota do quarto Bimestre" class="input2" autocomplete="off">
+    </section>
+    <section class="button">
+			<button type="button" id="calcularMedia" onclick="calcular ()">Calcular Média</button>
+      <button type="button" id="limparInput" onclick="limpar()">Limpar</button>
+    </section>
+    <section class="result">
 			<span id="resultadoMedia"></span>
-    </div>
-		<a href="https://alura.com.br/" target="_blank">
-    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-    </a>
-  </body>
-</html>
-  <script  src="./script.js"></script>
-
+    </section>
+    <section class="logo">
+		  <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="Logo da Alura" class="alura-logo">
+      </a>
+    </section>
+    <script  src="./script.js"></script>
+  </main>
 </body>
-</html>
