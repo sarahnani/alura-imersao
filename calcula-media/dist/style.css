@@ -8,12 +8,82 @@ body {
   background-repeat: no-repeat;
 }
 
-.container {
-  text-align: center;
-  padding: 20px;
-  height: 100vh;
+main{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
 }
 
+header {
+  text-align: center;
+  height: 9em;
+}
+
+/* input */
+.input{
+  display: grid;
+  width: 30em;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+}
+
+input[type=number] { 
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input{
+  height: 2em;
+  margin: 0.3em 0;
+  border-radius: 0.5em;
+  border-color: transparent;
+  padding-left: 1em;
+}
+
+input:focus{
+  background-color: #ffff9f;
+  outline: 0;
+}
+
+/* button */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 6em;
+  width: 30em;
+}
+
+button {
+  height: 3em;
+  width: 9em;
+  border-radius: 0.5em;
+  background-color: #FBD808;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+}
+
+button:hover {
+  box-shadow: 0 1px 1px 0 #ffff9f, 0 2px 8px 0 #ffff9f;
+  transition: 0.3s;
+}
+
+button:active {
+  background-color: #ffff9f;
+}
+
+/* result */
+.result {
+  width: 30em;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* text and image */
 .page-title {
   color:#ffffff;
   margin: 0 0 5px;
@@ -33,41 +103,4 @@ body {
   position: absolute;
   top: 10px;
   right: 10px;
-}
-
-#nome {
-	width: 300px;
-	position: static;
-  left: 50%;
-	margin-left:-150px;
-	margin-top: 80px;
-	display: grid;
-	border-radius: 4px;
-	padding: 0.5rem;
-	border-width: slin;
-}
-
-.input1, .input2 {
-	display: block;
-  width: 200px;
-	position: relative;
-  left: 50%;
-	margin-left:-100px;
-	border-radius: 4px;
-	padding: 0.5rem;
-	border-width: slin;
-}
-
-.button {
-  margin: 2rem;
-  padding: 0.5rem;
-  border-radius: 6px;
-  background: rgb(80, 136, 153);
-  color: white;
-  font-size: 1.5rem;
-  transition: 500ms ease-in-out;
-}
-
-#resultadoMedia {
-	color: white;
 }
