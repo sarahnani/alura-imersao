@@ -1,0 +1,73 @@
+body {
+  font-family: 'Roboto Mono',monospace;
+  min-height: 400px;
+  background-image: url('https://lh3.googleusercontent.com/proxy/NSIINa_6JgfkT3d3iOSYUIcgnrvMNV4kluDDot0-nODEau9ZQ1ktOx_Lx3yEh8c7Xp88bssf2VIwUwyK1ABbIVS_5RvO0Qg7VCCzkz-NzUKuycYSgKdfQktBFg7JDQ8Y5iiE-s19JP4');
+  background-color: black;
+  background-size: 80vh;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.page-title {
+  color:#ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color:#ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#nome {
+	width: 300px;
+	position: static;
+  left: 50%;
+	margin-left:-150px;
+	margin-top: 80px;
+	display: grid;
+	border-radius: 4px;
+	padding: 0.5rem;
+	border-width: slin;
+}
+
+.input1, .input2 {
+	display: block;
+  width: 200px;
+	position: relative;
+  left: 50%;
+	margin-left:-100px;
+	border-radius: 4px;
+	padding: 0.5rem;
+	border-width: slin;
+}
+
+.button {
+  margin: 2rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  background: rgb(80, 136, 153);
+  color: white;
+  font-size: 1.5rem;
+  transition: 500ms ease-in-out;
+}
+
+#resultadoMedia {
+	color: white;
+}
